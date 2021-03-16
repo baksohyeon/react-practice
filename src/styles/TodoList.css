@@ -1,0 +1,12 @@
+.todo-item-div {
+    height:500px;
+    background:rgb(250,246,246);
+    margin:20px auto 0 auto;
+    width:50%;
+}
+
+@media only screen and (max-width: 500px) {
+    .todo-item-div {
+        width:100%;
+    }
+  }
