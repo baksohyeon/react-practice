@@ -2,13 +2,12 @@ import React from 'react'
 import TodoItem from './TodoItem';
 
 interface Props {
-
 }
 
 interface TodoItemState {
-    id: number;
-    text: string;
-    done: boolean;
+    id: number
+    text: string
+    done: boolean
 }
 
 interface State {
@@ -77,7 +76,7 @@ class TodoList extends React.Component<Props, State> {
             />
           )
         );
-
+        
         return (
           <div>
             <h1>오늘 코딩 뭐하지?</h1>
@@ -85,7 +84,7 @@ class TodoList extends React.Component<Props, State> {
               <input onChange={onChange} value={input} />
               <button type="submit">추가하기</button>
             </form>
-            <ul style={{background:"blue"}}>
+            <ul style={{background:"yellow"}}>
               {todoItemList}
             </ul>
           </div>
