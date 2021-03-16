@@ -77,15 +77,15 @@ class TodoList extends React.Component<Props, State> {
             />
           )
         );
-    
+
         return (
           <div>
-            <h1>오늘 뭐하지?</h1>
+            <h1>오늘 코딩 뭐하지?</h1>
             <form onSubmit={onSubmit}>
               <input onChange={onChange} value={input} />
               <button type="submit">추가하기</button>
             </form>
-            <ul>
+            <ul style={{background:"blue"}}>
               {todoItemList}
             </ul>
           </div>
